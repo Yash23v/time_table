@@ -23,9 +23,9 @@ Add your timetable using `<td>` tag.
 Execute the program using runserver command.
 
 # PROGRAM
-```
-urls.py
 
+urls.py
+```
 from django.contrib import admin
 from django.urls import path
 from slotapp import views
@@ -35,17 +35,17 @@ urlpatterns = [
     path('tt/', views.slot)
 ]
 ```
-```
-views.py
 
+views.py
+```
 from django.shortcuts import render
 
 def slot(request):
     return render(request,'slot.html')
 ```
-```
-slot.html
 
+slot.html
+```
 <html lang="en">
     {% load static %}
 <head>

@@ -34,14 +34,16 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('tt/', views.slot)
 ]
-
+```
+```
 views.py
 
 from django.shortcuts import render
 
 def slot(request):
     return render(request,'slot.html')
-
+```
+```
 slot.html
 
 <html lang="en">
